@@ -1,0 +1,40 @@
+body {
+    background-color: #000000;
+    transition: background-color 0.5s;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: #7a7878;
+}
+
+#colorResult {
+    font-size: 24px;
+}
+.color{
+    display: flex;
+}
+#normalBox{
+    width: 30%;
+    height: 200px;
+    background-color: white;
+}
+#gradientBox {
+    width: 70%;
+    height: 200px;
+    background-image: linear-gradient(to right, #FF0000, #FFFF00);
+    transition: background-image 0.5s;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header svg{
+    color: #7a7878;
+    align-self: center;
+}
+section{
+    border: 1px solid #7a7878;
+    border-radius: 10px;
+}

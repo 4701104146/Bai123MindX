@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link href="Bai2.css" rel="stylesheet">
+    <script src="Bai2.js" defer></script>
+    
+
+</head>
+<body>
+    <section>
+        <div class="header">
+            <h1>Bộ chọn màu</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+              </svg>
+        </div>
+        <div class="color">
+            <div id="normalBox"></div>
+            <div id="gradientBox"></div>
+        </div>
+        
+        <form action="/action_page.php">
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+          </form>
+          <button onclick="generateColor()">Pick màu ngẫu nhiên</button><br>
+        <button onclick="copyToClipboard()">Copy mã màu</button>
+        <h2 id="colorResult">#000000</h2>
+    </section>
+</body>
+</html>
